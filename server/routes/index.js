@@ -4,13 +4,13 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
     res.render('index', { title: 'Home' });
 });
-/* GET product page. */
+/* GET people page. */
 router.get('/people', function (req, res, next) {
-    res.render('index', { title: 'People' });
+    res.render('people', { title: 'People' });
 });
-/* GET services page. */
+/* GET contact page. */
 router.get('/contact', function (req, res, next) {
-    res.render('index', { title: 'Contact' });
+    res.render('contact', { title: 'Contact' });
 });
 
 module.exports = router;
